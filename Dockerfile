@@ -9,7 +9,6 @@ RUN yum update -y \
     htop \ 
     iotop \
     psmisc \
-    gdb \
     lsof \
     policycoreutils-python \
     perf \
