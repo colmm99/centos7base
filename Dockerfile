@@ -4,7 +4,8 @@ MAINTAINER <colmomonks@gmail.com>
 
 RUN useradd perf
 
-RUN yum update -y \ 
+RUN yum -y install epel-release \
+    && yum update -y \ 
     && yum install -y \ 
     htop \ 
     iotop \
