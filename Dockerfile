@@ -12,4 +12,5 @@ RUN yum update -y \
     lsof \
     policycoreutils-python \
     perf \
-    git
+    git \
+    ansible
