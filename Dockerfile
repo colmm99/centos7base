@@ -4,8 +4,8 @@ MAINTAINER <colmomonks@gmail.com>
 
 RUN useradd perf
 
-RUN yum -y install epel-release \
-    && yum update -y \ 
+RUN yum update -y \ 
+    && yum install -y epel-release 
     && yum install -y \ 
     htop \ 
     iotop \
@@ -14,4 +14,5 @@ RUN yum -y install epel-release \
     policycoreutils-python \
     perf \
     git \
-    ansible
+    ansible \
+    figlet
