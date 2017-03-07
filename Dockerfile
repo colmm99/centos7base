@@ -6,6 +6,7 @@ RUN useradd perf
 
 RUN yum update -y \ 
     && yum install -y epel-release \
+    && yum makecache fast \
     && yum install -y \ 
     htop \ 
     iotop \
@@ -15,4 +16,6 @@ RUN yum update -y \
     perf \
     git \
     ansible \
+    dstat \
+    net-tools \
     figlet
